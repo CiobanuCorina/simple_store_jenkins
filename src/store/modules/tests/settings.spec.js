@@ -15,7 +15,7 @@ jest.mock('../../../api/999', () => ({
 }))
 describe("settings", () => {
     it("should have default value", () => {
-        expect(store.getters['settings/getIsDarkModeEnabled']).toBe(true);
+        expect(store.getters['settings/getIsDarkModeEnabled']).toBe(false);
     })
     it("should change dark mode to true", () => {
         testFunction.mockReturnValue('new string');
